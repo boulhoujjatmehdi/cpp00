@@ -93,3 +93,9 @@ Account::Account(int ss)
     _nbAccounts++;
     cout << "index:" << _accountIndex<< ";amount:"<< ss << ";created"<< endl;
 }
+Account::~Account(void)
+{
+    
+    _displayTimestamp();
+    cout <<"index:"<< _accountIndex <<";amount:"<< _amount <<";closed" << endl;
+}
